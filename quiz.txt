@@ -11,12 +11,9 @@ b.writerows(d)
 e=open('salary.csv','r')
 f=csv.reader(e)
 for i in f:
-    print(i)
+    if(i[1][0]=='s' or i[1][0]=='S'):
+       print(i)
 
 output:
 ['sid', 'sname', 'salary']
-['1', 'om', '10000']
 ['2', 'sai', '50000']
-['3', 'ram', '20000']
-['4', 'umashiv', '30000']
-['5', 'radekrishna', '20000']
